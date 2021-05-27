@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 - Casos</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <section>
+            <div class="header">
+                <h1>COVID-19 <br /> <span><em>Acompanhe o número de casos.</em></span></h1>
+                <div class="data--info">
+                    <div class="data">dd/MM/yyyy</div>
+                    <div class="protection">
+                        <h5><em>Cuide-se:</em> <a href="https://coronavirus.saude.gov.br/" target="_blank" class="bt-default">Saiba
+                                mais</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="select--country">
+                <div>
+                    <label>Casos por país: </label>
+                    <select name="country" id="select-country">
+                        <option value="mundo" selected>Mundo</option>
+                    </select>
+                </div>
+            </div>
+            <div class="data-country--container">
+                <div class="total-cases">
+                    <h3>Total de casos ativos</h3>
+                    <span>000</span>
+                </div>
+                <div class="total-deaths">
+                    <h3>Total de mortes</h3>
+                    <span>000</span>
+                </div>
+                <div class="total-recoverys">
+                    <h3>Total de recuperados</h3>
+                    <span>000</span>
+                </div>
+            </div>
+            <div class="data-country--container">
+                <div class="total-cases world">
+                    <h3>Mundo</h3>
+                    <p><span id='cases'>100</span>% dos casos globais.</p>
+                    <div class="bar-data cases">
+                        <div class="bar-line blue"></div>
+                    </div>
+                </div>
+                <div class="total-deaths world">
+                    <h3>Mundo</h3>
+                    <p><span id='deaths'>100</span>% das mortes globais.</p>
+                    <div class="bar-data deaths">
+                        <div class="bar-line red"></div>
+                    </div>
+                </div>
+                <div class="total-recoverys world">
+                    <h3>Mundo</h3>
+                    <p><span id='recovered'>100</span>% de recuperados globais.</p>
+                    <div class="bar-data recovered">
+                        <div class="bar-line green"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <div class="footer-info">Desenvolvido por AlexSolda | 2021</div>
+        </footer>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

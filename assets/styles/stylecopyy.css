@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
+:root {
+    /*COLORS*/
+    --blue: #006e90;
+    --red: #c50202;
+    --green: #00ff19;
+    --white: white;
+    --black: black;
+
+    --bg-dark: #202225;
+    --bg-medium: #2e353e;
+    --bg-light: #c4c4c4;
+
+    /*FONTS*/
+    --font-default: "Lato", sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bg-dark);
+    font-family: var(--font-default);
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+section {
+    height: calc(100% - 80px);
+    width: 1140px;
+    max-width: 1440px;
+    margin: 0 auto;
+    flex: 3;
+}
+.header {
+    height: 214px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 {
+    color: var(--red);
+    font-size: 36px;
+    font-weight: 400;
+}
+.header h1 span {
+    color: var(--white);
+    font-size: 32px;
+    font-weight: inherit;
+}
+.data--info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.header .data {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--bg-light);
+    margin-bottom: 10px;
+}
+.protection h5 {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--white);
+}
+.protection a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #00ff1a86;
+    border-radius: 10px;
+    transition: all 0.7s;
+}
+.protection a:hover {
+    background-color: var(--green);
+}
+.select--country {
+    margin-bottom: -30px;
+}
+.select--country label {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 300;
+    margin-right: 10px;
+}
+.select--country select {
+    border: 2px solid var(--blue);
+    height: 48px;
+    width: 400px;
+    font-size: 24px;
+    box-shadow: 0 0 15px black;
+    border-radius: 10px;
+    outline: none;
+}
+.data-country--container {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.total-cases,
+.total-deaths,
+.total-recoverys {
+    background-color: var(--white);
+    height: 196px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 15px black;
+}
+.total-cases {
+    border-left: 8px solid var(--blue);
+    border-right: 8px solid var(--blue);
+    color: var(--blue);
+}
+.total-deaths {
+    border-left: 8px solid var(--red);
+    border-right: 8px solid var(--red);
+    color: var(--red);
+}
+.total-recoverys {
+    border-left: 8px solid var(--green);
+    border-right: 8px solid var(--green);
+    color: var(--green);
+}
+.total-cases h3,
+.total-deaths h3,
+.total-recoverys h3 {
+    font-size: 24px;
+    font-weight: 300;
+}
+.total-cases span,
+.total-deaths span,
+.total-recoverys span {
+    font-size: 36px;
+    font-weight: bold;
+}
+.world {
+    height: 180px;
+    box-shadow: 0 0 15px black;
+}
+.world:first-child {
+    font-size: 30px;
+    font-weight: 400;
+}
+.world h3 {
+    font-size: 22px;
+    font-weight: 400;
+    transition: all 1s;
+    text-align: center;
+}
+.world p span {
+    font-size: 22px;
+    font-weight: bold;
+}
+.world p {
+    font-size: 22px;
+}
+.bar-data {
+    height: 15px;
+    width: 200px;
+    border-radius: 10px;
+}
+.bar-line {
+    width: 50%;
+    height: 100%;
+    transition: all 1s;
+}
+.cases {
+    border: 1px solid var(--blue);
+}
+.deaths {
+    border: 1px solid var(--red);
+}
+.recovered {
+    border: 1px solid var(--green);
+}
+.bar-line {
+    height: 100%;
+}
+.cases .blue {
+    background-color: var(--blue);
+    width: 100%;
+}
+.deaths .red {
+    background-color: var(--red);
+    width: 100%;
+}
+.recovered .green {
+    background-color: var(--green);
+    width: 100%;
+}
+footer {
+    height: 80px;
+    background-color: var(--bg-medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/*RESPOSIVIDADE*/
+@media (max-width: 1025px) {
+   
+}
